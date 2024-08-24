@@ -1,33 +1,116 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f;
+  color: aliceblue;
+}
+.NavItem1Hide {
+  display: none;
+}
+.NavItem2Hide {
+  display: none;
+}
+.NavItem3Hide {
+  display: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.SelectItem1Hide {
+  display: block;
+}
+.SelectItem2Hide {
+  display: block;
+}
+.SelectItem3Hide {
+  display: block;
+}
+
+@media (min-width: 560px) {
+  .NavItem1Hide {
+    display: block;
   }
+  .SelectItem1Hide {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  .NavItem2Hide {
+    display: block;
+  }
+  .SelectItem2Hide {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .postDisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 5%;
+  }
+}
+@media (min-width: 700px) {
+  .NavItem3Hide {
+    display: block;
+  }
+  .SelectItem3Hide {
+    display: none;
+  }
+}
+
+.selectt {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #5c6664;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.select:hover::after {
+  color: #23b499;
+}
+.sortBut {
+  background: #296156;
+  width: 110px;
+  height: 26px;
+  font-weight: 900;
+  padding: 0 0.5em;
+  color: #fff;
+  box-shadow: 0 0 2px #fff;
 }
