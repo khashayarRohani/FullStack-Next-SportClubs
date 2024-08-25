@@ -70,8 +70,12 @@ export default async function Posts({ searchParams }) {
                       className="tokenImage"
                       src={post.content_picture_url}
                       alt="NFT"
+                      // width={400}
+                      // height={200}
                       fill
-                      style={{ objectFit: "cover" }}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      style={{ objectFit: "fill" }}
+                      priority
                     />
                   </div>
 

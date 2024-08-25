@@ -36,7 +36,7 @@ export default function UploadImage() {
 
   return (
     <div>
-      <input type="file" onChange={handleImageChange} />
+      <input id="Pro" type="file" onChange={handleImageChange} />
       <button type="button" onClick={handleImageUpload}>
         Upload
       </button>

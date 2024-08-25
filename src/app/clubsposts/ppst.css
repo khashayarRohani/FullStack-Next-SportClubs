@@ -161,7 +161,7 @@
   z-index: -1; /* Ensure it stays behind all content */
 
   .h1 {
-    font-size: 15rem;
+    font-size: 8rem;
     filter: opacity(0.01);
   }
 }

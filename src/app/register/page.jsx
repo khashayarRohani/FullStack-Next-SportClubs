@@ -34,6 +34,7 @@ export default function Register() {
           minLength={2}
           maxLength={10}
           name="userName"
+          id="userName"
           placeholder="username"
           title="Enter Username"
           required
@@ -42,13 +43,14 @@ export default function Register() {
         <label htmlFor="Bio">Bio:</label>
         <textarea
           name="Bio"
+          id="Bio"
           placeholder="bio"
           title="Enter bio"
           required
         ></textarea>
 
-        <label htmlFor="Profile_picture_url">Profile Image:</label>
-        <UploadImage />
+        <label htmlFor="Pro">Profile Image:</label>
+        <UploadImage id="Pro" />
         <input type="hidden" name="imageUrl" id="imageUrl" />
 
         <div className={regStyle.wrap}>

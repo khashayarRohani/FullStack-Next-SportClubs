@@ -31,6 +31,7 @@ export default async function Profile({ searchParams }) {
         <label htmlFor="username">enter your username</label>
         <input
           name="username"
+          id="username"
           placeholder="username(Case Sensitive)"
           title="Enter a UserName"
         />

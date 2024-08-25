@@ -127,6 +127,7 @@ GROUP BY
                 src={post.content_picture_url} // Use post.content_picture_url
                 alt="Post Content"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 style={{ objectFit: "cover" }}
               />
             </div>

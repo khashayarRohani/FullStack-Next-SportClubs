@@ -20,7 +20,7 @@ WHERE user_id = $1
     [idNumber],
   );
 
-  async function DeleteUser(formData) {
+  async function DeleteUser() {
     "use server";
     await db.query(`DELETE FROM users WHERE id=$1`, [idNumber]);
     revalidatePath("/");
@@ -36,8 +36,11 @@ WHERE user_id = $1
           alt="Person"
           className="card__images"
           width={300}
-          height={300}
-          layout="intrinsic"
+          height={200}
+          sizes="(max-width: 700px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
+          quality={75}
+          style={{ objectFit: "cover" }}
         />
         <p className="card__name">{userProfile.username}</p>
         <p className="card__name">{userProfile.bio}</p>

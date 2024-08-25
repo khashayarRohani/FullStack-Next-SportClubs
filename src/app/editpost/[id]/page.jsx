@@ -52,7 +52,7 @@ WHERE id = $6;
       revalidatePath(`/createposts/${params.username}`);
       redirect("/clubsposts");
     } else {
-      redirect(`/edit/${params.id}?error=true`);
+      redirect(`/editpost/${params.id}?error=true`);
     }
   }
 

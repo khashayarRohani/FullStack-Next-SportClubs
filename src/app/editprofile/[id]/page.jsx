@@ -42,6 +42,7 @@ export default async function EditProfile({ params }) {
         <label htmlFor="Bio">Bio:</label>
         <textarea
           name="Bio"
+          id="Bio"
           placeholder={userInfo.bio}
           title="Enter bio"
           required
@@ -59,7 +60,7 @@ export default async function EditProfile({ params }) {
         style={{ width: "300px", height: "100px" }}
       >
         <h1>Editing Image...</h1>
-        <label htmlFor="Profile_picture_url">Profile Image:</label>
+        <label htmlFor="Pro">Profile Image:</label>
         <UploadImage />
         <input type="hidden" name="imageUrl" id="imageUrl" />
         <div className={regStyle.wrap}>
