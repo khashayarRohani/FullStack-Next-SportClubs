@@ -71,7 +71,7 @@ export default async function Posts({ searchParams }) {
                 <div className="main">
                   <div className="image-wrapper">
                     <Image
-                      className="tokenImage proImage"
+                      className="tokenImage"
                       src={post.content_picture_url}
                       alt="NFT"
                       // width={400}
@@ -107,7 +107,6 @@ export default async function Posts({ searchParams }) {
                   <div className="creator">
                     <div className="wrapper">
                       <Image
-                        className="proImage"
                         src={post.profile_picture_url}
                         alt="Creator"
                         width={200}
