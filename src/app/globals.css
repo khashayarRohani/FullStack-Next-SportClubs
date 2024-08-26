@@ -1,6 +1,6 @@
-* {
-  box-sizing: 0;
-}
+/* * {
+  box-sizing: border-box;
+} */
 body {
   margin: 0;
   padding: 0;
@@ -45,14 +45,6 @@ body {
 }
 
 @media (min-width: 700px) {
-  .postDisplay {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 5%;
-  }
-}
-@media (min-width: 700px) {
   .NavItem3Hide {
     display: block;
   }
@@ -78,10 +70,10 @@ body {
   font-size: 1em;
   font-family: "Open Sans", sans-serif;
 }
-select::-ms-expand {
+.selectt::-ms-expand {
   display: none;
 }
-.select {
+.selectt {
   position: relative;
   display: flex;
   width: 20em;
@@ -91,7 +83,7 @@ select::-ms-expand {
   overflow: hidden;
   border-radius: 0.25em;
 }
-.select::after {
+.selectt::after {
   content: "\25BC";
   position: absolute;
   top: 0;
@@ -102,7 +94,7 @@ select::-ms-expand {
   pointer-events: none;
   transition: 0.25s all ease;
 }
-.select:hover::after {
+.selectt:hover::after {
   color: #23b499;
 }
 .sortBut {

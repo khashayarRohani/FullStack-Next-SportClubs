@@ -42,7 +42,7 @@ export default async function SingleClubPosts({ params }) {
         return (
           <div key={post.id}>
             <div className="bg">
-              <h4 className="h1">{categoryName.rows[0].name}</h4>
+              <h1>{categoryName.rows[0].name}</h1>
             </div>
             <div className="nft">
               <div className="main">
@@ -54,7 +54,7 @@ export default async function SingleClubPosts({ params }) {
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: "cover" }}
-                    loading="lazy"
+                    priority
                   />
                 </div>
 
@@ -94,7 +94,6 @@ export default async function SingleClubPosts({ params }) {
                       <ins>Post by</ins> {post.username}
                     </p>
                     <div>
-                      {" "}
                       <Link href={`/clubsposts/${post.category_id}/${post.id}`}>
                         <button className="but">Details</button>
                       </Link>
