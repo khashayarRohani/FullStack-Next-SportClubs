@@ -1,40 +1,21 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 2 version
-*/
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .nft {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   width: 300px;
   margin: 2rem auto;
   border: 1px solid #ffffff22;
   background-color: #282c34;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(rgba(40, 44, 52, 1)),
-    to(rgba(17, 0, 32, 0.5))
-  );
   background: linear-gradient(
     0deg,
     rgba(40, 44, 52, 1) 0%,
     rgba(17, 0, 32, 0.5) 100%
   );
-  -webkit-box-shadow: 0 7px 20px 5px #00000088;
   box-shadow: 0 7px 20px 5px #00000088;
 
   overflow: hidden;
-  -webkit-transition: 0.5s all;
   transition: 0.5s all;
 
   hr {
@@ -49,12 +30,7 @@ code {
   }
 
   .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     padding: 1rem;
@@ -69,7 +45,6 @@ code {
     }
 
     .tokenImage {
-      -o-object-fit: cover;
       object-fit: cover;
     }
 
@@ -79,22 +54,12 @@ code {
     }
 
     .tokenInfo {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
       justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       margin-right: 1.5rem;
       .price {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         color: #ee83e5;
         font-weight: 700;
@@ -106,12 +71,8 @@ code {
       }
 
       .duration {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         width: 40%;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         color: #a89ec9;
 
@@ -123,11 +84,7 @@ code {
     }
 
     .creator {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       margin-top: 0.2rem;
       margin-bottom: -0.3rem;
@@ -138,18 +95,13 @@ code {
       }
 
       .wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         border: 1px solid #ffffff22;
         padding: 0.3rem;
         margin: 0;
         margin-right: 0.5rem;
         border-radius: 100%;
-        -webkit-box-shadow: inset 0 0 0 4px #000000aa;
         box-shadow: inset 0 0 0 4px #000000aa;
 
         img {
@@ -157,7 +109,6 @@ code {
           border: 1px solid #ffffff22;
           width: 2rem;
           height: 2rem;
-          -o-object-fit: cover;
           object-fit: cover;
           margin: 0;
         }
@@ -173,25 +124,20 @@ code {
     font-weight: 900;
   }
 
-  ::before {
+  /* ::before {
     position: fixed;
     content: "";
-    -webkit-box-shadow: 0 0 100px 40px #ffffff08;
     box-shadow: 0 0 100px 40px #ffffff08;
     top: -10%;
     left: -100%;
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     height: 60rem;
-    -webkit-transition: 0.7s all;
     transition: 0.7s all;
-  }
+  } */
 
   &:hover {
     border: 1px solid #ffffff44;
-    -webkit-box-shadow: 0 7px 50px 10px #000000aa;
     box-shadow: 0 7px 50px 10px #000000aa;
-    -webkit-transform: scale(1.015);
     transform: scale(1.015);
 
     ::before {
@@ -208,68 +154,45 @@ code {
 }
 
 .bg {
-  position: absolute; /* Or remove this line if it isn't necessary */
+  position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: -1; /* Ensure it stays behind all content */
+  z-index: -1;
 
   .h1 {
     font-size: 8rem;
   }
 }
 .check {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 1.25rem;
 }
 @media (min-width: 700px) {
   .postDisplay {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-
-    -ms-flex-wrap: wrap;
 
     flex-wrap: wrap;
     margin-left: 5%;
   }
 
   .nft {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     max-width: 300px;
     margin: 2rem auto;
     border: 1px solid #ffffff22;
     background-color: #282c34;
-    background: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(40, 44, 52, 1)),
-      to(rgba(17, 0, 32, 0.5))
-    );
     background: linear-gradient(
       0deg,
       rgba(40, 44, 52, 1) 0%,
       rgba(17, 0, 32, 0.5) 100%
     );
-    -webkit-box-shadow: 0 7px 20px 5px #00000088;
     box-shadow: 0 7px 20px 5px #00000088;
     border-radius: 0.7rem;
 
     overflow: hidden;
-    -webkit-transition: 0.5s all;
     transition: 0.5s all;
 
     hr {
@@ -284,27 +207,21 @@ code {
     }
 
     .main {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
       flex-direction: column;
       width: 100%;
       padding: 1rem;
 
       .image-wrapper {
         position: relative;
-        width: auto; /* Ensure the image takes up the full width of the card */
-        height: 200px; /* Set this height based on your design */
+        width: auto;
+        height: 200px;
         overflow: hidden;
         border-radius: 0.5rem;
         margin-right: 1.75rem;
       }
 
       .tokenImage {
-        -o-object-fit: cover;
         object-fit: cover;
       }
 
@@ -314,22 +231,12 @@ code {
       }
 
       .tokenInfo {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
         justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         margin-right: 1.5rem;
         .price {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
           align-items: center;
           color: #ee83e5;
           font-weight: 700;
@@ -341,11 +248,7 @@ code {
         }
 
         .duration {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
           align-items: center;
           color: #a89ec9;
           margin-right: 0.2rem;
@@ -358,11 +261,7 @@ code {
       }
 
       .creator {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         margin-top: 0.2rem;
         margin-bottom: -0.3rem;
@@ -373,18 +272,13 @@ code {
         }
 
         .wrapper {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
           align-items: center;
           border: 1px solid #ffffff22;
           padding: 0.3rem;
           margin: 0;
           margin-right: 0.5rem;
           border-radius: 100%;
-          -webkit-box-shadow: inset 0 0 0 4px #000000aa;
           box-shadow: inset 0 0 0 4px #000000aa;
 
           img {
@@ -392,7 +286,6 @@ code {
             border: 1px solid #ffffff22;
             width: 2rem;
             height: 2rem;
-            -o-object-fit: cover;
             object-fit: cover;
             margin: 0;
           }
@@ -400,7 +293,6 @@ code {
       }
     }
 
-    /* Like btn and delete btn */
     .but {
       height: 28px;
       border: solid 2px #567af2;
@@ -411,22 +303,17 @@ code {
     ::before {
       position: fixed;
       content: "";
-      -webkit-box-shadow: 0 0 100px 40px #ffffff08;
       box-shadow: 0 0 100px 40px #ffffff08;
       top: -10%;
       left: -100%;
-      -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
       height: 60rem;
-      -webkit-transition: 0.7s all;
       transition: 0.7s all;
     }
 
     &:hover {
       border: 1px solid #ffffff44;
-      -webkit-box-shadow: 0 7px 50px 10px #000000aa;
       box-shadow: 0 7px 50px 10px #000000aa;
-      -webkit-transform: scale(1.015);
       transform: scale(1.015);
 
       ::before {
@@ -443,26 +330,19 @@ code {
   }
 
   .bg {
-    position: absolute; /* Or remove this line if it isn't necessary */
+    position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    z-index: -1; /* Ensure it stays behind all content */
+    z-index: -1;
 
     .h1 {
       font-size: 8rem;
     }
   }
   .check {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     /* gap: 1.25rem; */
     padding: 0;
