@@ -2,7 +2,7 @@ import { db } from "@/lib/db";
 import Link from "next/link";
 import Image from "next/image";
 
-import "../clubsposts/ppst.css";
+import "../pst.css";
 import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
