@@ -69,9 +69,9 @@ export default async function Posts({ searchParams }) {
               </div>
               <div className="nft">
                 <div className="main">
-                  <div className={isChrome ? "" : "image-wrapper"}>
+                  <div className="image-wrapper">
                     <Image
-                      className="tokenImage"
+                      className={isChrome ? "" : "tokenImage"}
                       src={post.content_picture_url}
                       alt="NFT"
                       // width={400}
