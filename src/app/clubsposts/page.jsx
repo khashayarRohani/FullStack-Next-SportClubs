@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import "./ppst.css";
-
+import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
@@ -11,7 +11,11 @@ export default async function Posts({ searchParams }) {
   const res = await db.query(
     `SELECT posts.*, users.username ,users.profile_picture_url FROM posts JOIN users ON posts.user_id = users.id ORDER By posts.id`,
   );
+  const headersList = headers();
+  const userAgent = headersList.get("user-agent") || "";
 
+  const isChrome = userAgent.includes("Chrome") && !userAgent.includes("Edg"); //here i found a peace of code in chatgpt which recommand to use headers for recognizing the browser to set proper attribute for images. however prority itself performs loading lazy but for making sure that it's working I added this line to see if it's gonna fix the issue with vercel
+  console.log(isChrome);
   async function handleLike(formData) {
     "use server";
     const postId = formData.get("postId");
@@ -73,9 +77,9 @@ export default async function Posts({ searchParams }) {
                       // width={400}
                       // height={200}
                       fill
-                      sizes="(max-width: 2040px) 100vw"
+                      sizes="(max-width: 699px) 100vw, (min-width: 700px) 300px"
                       style={{ objectFit: "fill" }}
-                      priority
+                      {...(isChrome ? { priority: true } : { loading: "lazy" })}
                     />
                   </div>
 
