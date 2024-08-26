@@ -37,18 +37,15 @@ code {
 
     .image-wrapper {
       position: relative;
-      width: 100%; /* Adjust based on your layout needs */
-      height: 200px; /* Ensure consistent height */
-      overflow: hidden; /* To handle any overflow issues */
+      width: auto; /* Ensure the image takes up the full width of the card */
+      height: 200px; /* Set this height based on your design */
+      overflow: hidden;
+      border-radius: 0.5rem;
+      margin-right: 1.75rem;
     }
 
     .tokenImage {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0;
-      object-fit: cover; /* Maintains aspect ratio, covers the container */
+      object-fit: cover;
     }
 
     .description {
