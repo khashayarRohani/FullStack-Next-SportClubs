@@ -71,13 +71,13 @@ export default async function Posts({ searchParams }) {
                 <div className="main">
                   <div className="image-wrapper">
                     <Image
-                      className="tokenImage"
+                      className="tokenImage proImage"
                       src={post.content_picture_url}
                       alt="NFT"
-                      width={400}
-                      height={200}
-                      // fill
-                      // sizes="(min-width: 375px) 300px"
+                      // width={400}
+                      // height={200}
+                      fill
+                      sizes="(min-width: 375px) 300px"
                       style={{ objectFit: "fill" }}
                       priority
                     />
@@ -107,6 +107,7 @@ export default async function Posts({ searchParams }) {
                   <div className="creator">
                     <div className="wrapper">
                       <Image
+                        className="proImage"
                         src={post.profile_picture_url}
                         alt="Creator"
                         width={200}

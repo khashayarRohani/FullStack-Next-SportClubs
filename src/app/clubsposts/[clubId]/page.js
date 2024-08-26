@@ -52,7 +52,7 @@ export default async function SingleClubPosts({ params }) {
                     src={post.content_picture_url}
                     alt="NFT"
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="(min-width: 375px) 300px"
                     style={{ objectFit: "cover" }}
                     priority
                   />
