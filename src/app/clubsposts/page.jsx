@@ -77,9 +77,9 @@ export default async function Posts({ searchParams }) {
                       // width={400}
                       // height={200}
                       fill
-                      sizes="(max-width: 699px) 100vw, (min-width: 700px) 300px"
+                      sizes="(min-width: 375px) 300px"
                       style={{ objectFit: "fill" }}
-                      {...(isChrome ? { priority: true } : { loading: "lazy" })}
+                      priority
                     />
                   </div>
 
