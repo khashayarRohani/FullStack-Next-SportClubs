@@ -74,10 +74,10 @@ export default async function Posts({ searchParams }) {
                       className="tokenImage"
                       src={post.content_picture_url}
                       alt="NFT"
-                      // width={400}
-                      // height={200}
-                      fill
-                      sizes="(min-width: 375px) 300px"
+                      width={400}
+                      height={200}
+                      // fill
+                      // sizes="(min-width: 375px) 300px"
                       style={{ objectFit: "fill" }}
                       priority
                     />
