@@ -2,7 +2,7 @@ import { db } from "@/lib/db";
 import Link from "next/link";
 import Image from "next/image";
 
-import "@/pst.css";
+import "../clubsposts/ppst.css";
 import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
@@ -71,7 +71,7 @@ export default async function Posts({ searchParams }) {
                 <div className="main">
                   <div className="image-wrapper">
                     <Image
-                      className={isChrome ? "tokenImage_chrome" : "tokenImage"}
+                      className="tokenImage"
                       src={post.content_picture_url}
                       alt="NFT"
                       // width={400}
