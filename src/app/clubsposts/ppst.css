@@ -154,11 +154,11 @@ code {
 }
 
 .bg {
-  position: absolute; /* Or remove this line if it isn't necessary */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1; /* Ensure it stays behind all content */
+  z-index: -1;
 
   .h1 {
     font-size: 8rem;
@@ -214,8 +214,8 @@ code {
 
       .image-wrapper {
         position: relative;
-        width: auto; /* Ensure the image takes up the full width of the card */
-        height: 200px; /* Set this height based on your design */
+        width: auto;
+        height: 200px;
         overflow: hidden;
         border-radius: 0.5rem;
         margin-right: 1.75rem;
@@ -293,7 +293,6 @@ code {
       }
     }
 
-    /* Like btn and delete btn */
     .but {
       height: 28px;
       border: solid 2px #567af2;
@@ -331,11 +330,11 @@ code {
   }
 
   .bg {
-    position: absolute; /* Or remove this line if it isn't necessary */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1; /* Ensure it stays behind all content */
+    z-index: -1;
 
     .h1 {
       font-size: 8rem;
