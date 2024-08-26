@@ -138,7 +138,11 @@ code {
     height: 60rem;
     transition: 0.7s all;
   } */
-
+  .but:hover {
+    background-color: #cb2d3e;
+    border: 5px solid #cb2d3e;
+    color: #ece9e6;
+  }
   &:hover {
     border: 1px solid #ffffff44;
     box-shadow: 0 7px 50px 10px #000000aa;
@@ -147,12 +151,6 @@ code {
     ::before {
       top: -100%;
       left: 200%;
-    }
-
-    .but:hover {
-      background-color: #cb2d3e;
-      border: 5px solid #cb2d3e;
-      color: #ece9e6;
     }
   }
 }
