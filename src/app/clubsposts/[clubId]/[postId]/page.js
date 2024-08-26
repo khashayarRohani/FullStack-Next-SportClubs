@@ -141,7 +141,7 @@ GROUP BY
                 <p>likes: {post.like_count}</p> {/* Use post.like_count */}
               </div>
 
-              <div className="duration">
+              <div className="durationn">
                 <form action={handleLike}>
                   <input type="hidden" name="postId" value={post.id} />
                   <button className="but" type="submit">

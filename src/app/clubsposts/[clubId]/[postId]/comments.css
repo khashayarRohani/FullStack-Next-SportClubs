@@ -56,6 +56,17 @@ butto {
 .list ul li:hover:before {
   transform: scaleX(1);
 }
+.durationn {
+  display: flex;
+  width: 55%;
+  align-items: center;
+  color: #a89ec9;
+
+  ins {
+    margin: 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+}
 .commentForms {
   display: flex;
   flex-direction: column;
