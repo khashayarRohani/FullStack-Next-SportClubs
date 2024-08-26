@@ -77,7 +77,7 @@ export default async function Posts({ searchParams }) {
                       // width={400}
                       // height={200}
                       fill
-                      sizes="(min-width: 375px) 300px"
+                      sizes="(min-width: 375px) 300px, 100vw" /* Adjust sizes based on your layout */
                       style={{ objectFit: "fill" }}
                       priority
                     />
