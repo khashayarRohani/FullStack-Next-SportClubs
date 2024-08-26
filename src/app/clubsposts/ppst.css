@@ -49,7 +49,9 @@ code {
       width: 100%;
       object-fit: cover;
     }
-
+    .tokenImage_chrome {
+      object-fit: cover;
+    }
     .description {
       margin: 0.5rem 0;
       color: #a89ec9;

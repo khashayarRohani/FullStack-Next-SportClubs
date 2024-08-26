@@ -71,7 +71,7 @@ export default async function Posts({ searchParams }) {
                 <div className="main">
                   <div className="image-wrapper">
                     <Image
-                      className={isChrome ? "" : "tokenImage"}
+                      className={isChrome ? "tokenImage_chrome" : "tokenImage"}
                       src={post.content_picture_url}
                       alt="NFT"
                       // width={400}
